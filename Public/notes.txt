@@ -1,0 +1,11 @@
+Comando para abrir o servidor PHP no cmd:
+
+(primeiro colocar o PATH de onde o PHP está instalado na máquina nas variáveis de ambiente)
+
+-> php -v (para ver a versão do PHP instalada, só funciona se for da versão 5 ou superiores)
+
+-> cd (adicione aqui o path para o diretório do projeto)
+
+-> php -S localhost:8080 (porta não necessariamente será a 8080, use a que quiser, desde que esteja livre :) )
+
+(para parar o servidor, basta teclar ctrl + c)
