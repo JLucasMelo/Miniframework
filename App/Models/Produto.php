@@ -2,14 +2,10 @@
 
 namespace App\Models;
 
-class Produto
-{
-    protected $db;
+use MF\Model\Model;
 
-    public function __construct(\PDO $db)
-    {
-        $this->db = $db;
-    }
+class Produto extends Model
+{
 
     public function getProduto()
     {
