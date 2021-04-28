@@ -1,5 +1,12 @@
-<h1>Sobre Nós</h1>
+<h1 class="text-center display-2">Sobre Nós <a class="badge badge-dark" href="http://localhost:8888/"> Home </a></h1>
 <hr>
-<?php
-echo 'Chegamos ao indexController e disparamos a action sobre nós';
-?>
+<?php foreach ($this->view->dados as $indice => $info) { ?>
+<h1 class="display-4 text-center"> <?= $info['titulo'] ?> </h1>
+<br>
+<h4 class="text-center">
+    <?=  $info['descricao'] ?>
+</h4>
+<br>
+<hr>
+<?php } ?>
+

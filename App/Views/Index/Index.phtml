@@ -1,5 +1,9 @@
-<h1>Index</h1>
+<h1 class="display-2 text-center"> produtos <a class="align-self-center badge badge-dark" href="http://localhost:8888/sobre_nos"> Sobre nós </a> </h1>
 <hr>
-<?php
-echo 'Chegamos ao indexController e disparamos a action index';
-?>
+
+<?php foreach ($this->view->dados as $indice => $produto) { ?>
+
+<h1 class="display-4 text-center"> <?= $produto['id'] . ' - ' . $produto['descricao'] ?></h1>
+<h3 class=" text-center"> R$ <?= $produto['preco'] ?> </h3>
+
+<?php } ?>
